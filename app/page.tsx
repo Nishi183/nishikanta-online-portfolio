@@ -1,15 +1,24 @@
 import Image from "next/image";
-import { Download, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import {
+  Download,
+  ExternalLink,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+} from "lucide-react";
 import { SplineSceneBasic } from "@/components/demo/spline-demo";
 import { SparklesCore } from "@/components/ui/sparkles";
 
 const competencies = [
-  "DevOps and CI/CD leadership across Azure DevOps, Jenkins, and GitHub Actions",
-  "Cloud and infrastructure automation on Azure, AWS, and hybrid environments",
-  "MLOps platform engineering with Azure ML, SageMaker, Kubeflow, and GPU workloads",
-  "Containers, Kubernetes, Helm, OpenShift, and secure secrets management",
-  "Observability with Prometheus, Grafana, ELK, Azure Monitor, and SRE practices",
-  "Change governance with ServiceNow, CR/CRA workflows, and regulated delivery",
+  "DevOps & CI/CD leadership with Azure DevOps, Jenkins, and GitHub Actions.",
+  "Cloud & infrastructure automation across Azure, AWS, and GCP with Terraform, ARM, CloudFormation, Python, and shell scripting.",
+  "AI/ML infrastructure and MLOps with Azure ML, SageMaker, Kubeflow, model versioning, and scalable inference.",
+  "Containers and microservices using Docker, Kubernetes, AKS, EKS, Helm, OpenShift, and secure secrets management.",
+  "Observability, DevSecOps, and SRE with Prometheus, Grafana, ELK, Azure Monitor, SLIs, SLOs, and root-cause analysis.",
+  "Change governance with ServiceNow CR/CRA workflows for regulated banking, insurance, and healthcare environments.",
+  "AI-powered DevOps, AIOps, intelligent monitoring, RAG pipelines, and internal developer platforms.",
+  "Generative AI for DevOps, LLM-assisted troubleshooting, and Kubernetes for AI workloads with GPU-backed deployments.",
 ];
 
 const certifications = [
@@ -19,44 +28,69 @@ const certifications = [
   "Microsoft Certified: Azure AI Fundamentals",
   "Microsoft Certified: Designing and Implementing Microsoft DevOps Solutions (AZ-400)",
   "Certified SAS Viya Administrator",
+  "Certified Enterprise Chaos Engineering (Gremlin)",
+  "In Progress: Azure Solutions Architect Expert (AZ-305)",
+  "In Progress: Certified Kubernetes Administrator (CKA)",
+  "Certified Climate Change Risk Management from Udemy",
 ];
 
 const experience = [
   {
     role: "Specialist DevOps with Product Engineering",
-    company: "LTI Mindtree",
-    period: "Dec 2022 - Present",
+    company: "LTI-Mindtree",
+    period: "Jan 2026 - Present",
+    project: "Project-3: In-house AI-native product, Blueverge SDLC",
     summary:
-      "Leading DevOps and SRE initiatives for enterprise product engineering, with focus on cloud-native platforms, AI-enabled delivery, observability, and platform reliability.",
+      "Leading AI-native platform engineering with MCP architecture, agentic AI workflows, RAG-driven operations, and autonomous DevOps automation.",
     highlights: [
-      "Built CI/CD delivery practices with Azure DevOps, Git, Ansible, and Nexus.",
-      "Led AWS EKS and Azure AKS platform deployments for scalable multi-tier applications.",
-      "Enabled observability using Prometheus, Grafana, and Azure Monitor.",
-      "Improved AWS cost efficiency by reducing infrastructure spend by 20%.",
+      "Designed enterprise-grade MCP architecture connecting DevOps, AI, and platform engineering.",
+      "Built centralized control planes for microservices, AI workloads, and infrastructure lifecycle management.",
+      "Enabled AI-driven monitoring, anomaly detection, auto-remediation, and LLM-powered troubleshooting.",
+      "Implemented self-service internal developer platform capabilities to accelerate delivery and developer productivity.",
+    ],
+  },
+  {
+    role: "Specialist DevOps with Product Engineering",
+    company: "LTI-Mindtree",
+    period: "Dec 2022 - Dec 2025",
+    project:
+      "Project-2: Standard Chartered Bank, Mosaic-Refract, SRE and infra platform engineering",
+    summary:
+      "Designed and operated AI and cloud platforms for model lifecycle management, governance, deployment automation, and secure observability.",
+    highlights: [
+      "Built AI and ML platforms for model training, versioning, deployment, and monitoring at scale.",
+      "Standardized infrastructure with reusable pipelines, registries, and orchestration tooling.",
+      "Automated provisioning and compliance workflows across Azure and AWS using IaC.",
+      "Partnered with data science teams to run ML pipelines on Azure ML, SageMaker, and Kubernetes.",
     ],
   },
   {
     role: "Senior DevOps Engineer",
     company: "Larsen & Toubro Infotech",
     period: "Oct 2019 - Nov 2022",
+    project:
+      "Project-1: In-house data and AI product, Fosfor Decision Cloud Refract Insight Designer",
     summary:
-      "Managed end-to-end DevOps delivery for banking and insurance platforms, supporting high-availability releases and ML-driven enterprise solutions.",
+      "Managed large-scale DevOps delivery for banking and insurance workloads with strong reliability, container orchestration, and ML pipeline enablement.",
     highlights: [
-      "Designed Kubernetes environments on EKS and AKS.",
-      "Reduced incident response time through proactive observability pipelines.",
-      "Supported AI and ML product rollouts for fraud detection and predictive analytics.",
+      "Managed end-to-end DevOps processes for enterprise applications in regulated domains.",
+      "Designed Kubernetes clusters on EKS and AKS for resilient, scalable deployments.",
+      "Reduced incident response time by 30% through proactive monitoring and alerting automation.",
+      "Supported predictive analytics and ML use cases including fraud detection, credit risk, and claims automation.",
     ],
   },
   {
     role: "Senior Software Engineer",
     company: "Tech Mahindra (Harjai Computer Pvt Ltd)",
     period: "May 2016 - Jul 2018",
+    project: "Banking and telecom delivery programs",
     summary:
-      "Focused on DevOps automation, application delivery, and release acceleration across banking and telecom projects.",
+      "Focused on DevOps automation, software delivery acceleration, and release consistency across enterprise projects.",
     highlights: [
-      "Implemented CI/CD pipelines using Jenkins and Git.",
-      "Automated configuration management with Ansible.",
-      "Helped reduce time-to-market by 40% through release automation.",
+      "Developed and maintained software applications with a DevOps automation focus.",
+      "Implemented CI/CD pipelines with Jenkins and Git, reducing time-to-market by 40%.",
+      "Automated configuration management using Ansible for better consistency across environments.",
+      "Supported banking and telecom projects with rapid release practices and deployment automation.",
     ],
   },
 ];
@@ -82,15 +116,15 @@ export default function Home() {
           <div className="space-y-8">
             <div className="space-y-4">
               <p className="text-sm uppercase tracking-[0.35em] text-emerald-300">
-                DevOps Specialist Engineer
+                DevOps Expert | Cloud | AI-Native Infra | SRE | AIOps
               </p>
               <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-7xl">
                 Nishi Kanta Das
               </h1>
               <p className="max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
-                8.6 years of experience building cloud, DevOps, SRE, and AI-ready
-                infrastructure across banking, finance, insurance, and healthcare
-                platforms.
+                Proactive DevOps, cloud, and infrastructure architect with 8.6 years
+                of experience building enterprise automation, AI-ready platforms,
+                resilient SRE practices, and cloud-native delivery systems.
               </p>
             </div>
 
@@ -132,9 +166,15 @@ export default function Home() {
                 <Download className="h-4 w-4" />
                 Download Resume
               </a>
-              <div className="inline-flex items-center rounded-full border border-emerald-400/30 bg-emerald-400/10 px-5 py-3 text-sm text-emerald-100">
-                Open to DevOps, SRE, Cloud, and Platform Engineering leadership roles
-              </div>
+              <a
+                href="https://nishi183.github.io/nishikanta-online-portfolio"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-medium text-slate-100 transition hover:bg-white/10"
+              >
+                <ExternalLink className="h-4 w-4" />
+                Portfolio URL
+              </a>
             </div>
           </div>
 
@@ -147,6 +187,7 @@ export default function Home() {
                   alt="Portrait of Nishi Kanta Das"
                   fill
                   priority
+                  unoptimized
                   className="object-cover"
                 />
               </div>
@@ -160,17 +201,22 @@ export default function Home() {
           <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">
             Career Objective
           </p>
-          <h2 className="mt-4 text-3xl font-semibold text-white">Cloud, automation, and AI-ready platforms</h2>
+          <h2 className="mt-4 text-3xl font-semibold text-white">
+            Build scalable, secure, AI-enabled platforms
+          </h2>
           <p className="mt-4 text-base leading-8 text-slate-300">
-            Drive innovation and build scalable, reliable, and secure solutions by
-            leveraging deep experience in DevOps, cloud, infrastructure, and SRE.
-            The goal is to build next-generation AI-enabled platforms that deliver
-            measurable business impact through automation-first engineering.
+            Drive innovation and build scalable, reliable, and secure solutions
+            by leveraging 8+ years of experience in DevOps, cloud, and
+            infrastructure. My goal is to build next-generation AI-enabled
+            platforms that deliver measurable business impact through automation,
+            SRE, and cloud-native transformation.
           </p>
         </div>
 
         <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-sky-500/10 to-emerald-500/10 p-8">
-          <p className="text-sm uppercase tracking-[0.3em] text-sky-300">Education</p>
+          <p className="text-sm uppercase tracking-[0.3em] text-sky-300">
+            Education
+          </p>
           <h2 className="mt-4 text-2xl font-semibold text-white">
             B.Tech in Computer Science & Engineering
           </h2>
@@ -186,7 +232,9 @@ export default function Home() {
           <SplineSceneBasic />
         </div>
         <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-8">
-          <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">Core Competencies</p>
+          <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">
+            Core Competencies
+          </p>
           <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {competencies.map((item) => (
               <div
@@ -203,11 +251,13 @@ export default function Home() {
       <section className="mx-auto w-full max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[1.25fr_0.75fr]">
           <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-8">
-            <p className="text-sm uppercase tracking-[0.3em] text-amber-300">Experience</p>
+            <p className="text-sm uppercase tracking-[0.3em] text-amber-300">
+              Experience
+            </p>
             <div className="mt-6 space-y-6">
               {experience.map((item) => (
                 <article
-                  key={`${item.company}-${item.role}`}
+                  key={`${item.company}-${item.role}-${item.project}`}
                   className="rounded-2xl border border-white/10 bg-slate-900/60 p-6"
                 >
                   <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
@@ -217,6 +267,9 @@ export default function Home() {
                     </div>
                     <p className="text-sm text-slate-400">{item.period}</p>
                   </div>
+                  <p className="mt-3 text-sm font-medium text-sky-300">
+                    {item.project}
+                  </p>
                   <p className="mt-4 text-sm leading-7 text-slate-300">{item.summary}</p>
                   <ul className="mt-4 space-y-2 text-sm leading-7 text-slate-300">
                     {item.highlights.map((highlight) => (
@@ -229,7 +282,9 @@ export default function Home() {
           </div>
 
           <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-8">
-            <p className="text-sm uppercase tracking-[0.3em] text-fuchsia-300">Certifications</p>
+            <p className="text-sm uppercase tracking-[0.3em] text-fuchsia-300">
+              Certifications
+            </p>
             <ul className="mt-6 space-y-3 text-sm leading-7 text-slate-300">
               {certifications.map((item) => (
                 <li
