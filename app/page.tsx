@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Download, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { SplineSceneBasic } from "@/components/demo/spline-demo";
 import { SparklesCore } from "@/components/ui/sparkles";
 
 const competencies = [
@@ -181,6 +182,9 @@ export default function Home() {
       </section>
 
       <section className="mx-auto w-full max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
+        <div className="mb-8">
+          <SplineSceneBasic />
+        </div>
         <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-8">
           <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">Core Competencies</p>
           <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -216,7 +220,7 @@ export default function Home() {
                   <p className="mt-4 text-sm leading-7 text-slate-300">{item.summary}</p>
                   <ul className="mt-4 space-y-2 text-sm leading-7 text-slate-300">
                     {item.highlights.map((highlight) => (
-                      <li key={highlight}>• {highlight}</li>
+                      <li key={highlight}>- {highlight}</li>
                     ))}
                   </ul>
                 </article>
