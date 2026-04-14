@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Nishikanta Portfolio",
-  description: "Sparkles component integration demo",
+  description: "DevOps, Cloud, SRE, and platform engineering portfolio of Nishi Kanta Das",
 };
 
 export default function RootLayout({
