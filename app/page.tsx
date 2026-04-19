@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {
   Download,
   ExternalLink,
@@ -182,13 +181,11 @@ export default function Home() {
             <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-emerald-400/25 via-sky-400/15 to-transparent blur-2xl" />
             <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-3 shadow-2xl backdrop-blur">
               <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem]">
-                <Image
+                <img
                   src="/photo.jpeg"
                   alt="Portrait of Nishi Kanta Das"
-                  fill
-                  priority
-                  unoptimized
-                  className="object-cover"
+                  className="h-full w-full object-cover"
+                  loading="eager"
                 />
               </div>
             </div>
